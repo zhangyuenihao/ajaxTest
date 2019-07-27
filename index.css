@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.warp{
+    margin-top: 100px;
+    background:#efefef;
+    padding-bottom: 100px;
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main-hd{
+    height: 50px;
+    line-height: 50px;
+}
+.title-info{
+    float: left;
+    margin-left: 20px;
+}
+.total{
+    float: right;
+    margin-right: 20px;
+}
+.total-name{
+    color: dodgerblue;
+}
+.count{
+    font-style: normal;
+    color: red;
+}
+.main-table{
+      border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+}
+.table-hd{
+    border-bottom: 1px solid #cccccc;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.row{
+    line-height: 50px;
+    height: 50px;
+    border-bottom:1px dotted #cccccc ;
+    display: flex;
+    padding-left: 20px;
+}
+.table-hd .row{
+    border-bottom: none;
+}
+.table-bd{
+    padding: 0 10px;
+    color: #666666;
+}
+.col{
+    float: left;
+    text-align: left;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right:10px;
+}
+.col1{
+    flex: 2;
+}
+.col2{
+   flex: 1;
+}
+.col3{
+    flex: 1;
+}
+.col4{
+    flex: 1;
+}
+.col5{
+    flex: 1;
+}
+.col6{
+    flex: 0.5;
+    position: relative;
+}
+.down-btn{
+    display: inline-block;
+    width: 21px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url("image/banner-icon.png") no-repeat -28px -146px;
+}
+.down-btn:hover{
+    background-position: -81px -146px;
+}
+.down-btn.up{
+    background-position: -2px -145px;
+}
+.down-btn.up:hover{
+    background-position: -54px -146px;
+}
+.info{
+    border-bottom:1px dotted #cccccc ;
+    padding-left: 20px;
+    display: none;
+}
+.btn{
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 20px 20px 20px 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+.apply{
+    background: #EC6738;
+}
+.collect{
+    background: #4090FF;
+}
+.table-bd:last-child{
+    margin-bottom: 10px;
+}

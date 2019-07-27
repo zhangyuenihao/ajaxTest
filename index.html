@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度招聘</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="warp">
+    <div class="main">
+        <div class="main-hd">
+            <h3 class="title-info">职位信息</h3>
+            <div class="total">
+                <span class="total-name">web前端</span>
+                <span class="total-info">共<em class="count">20</em>个在招职位</span>
+            </div>
+        </div>
+        <div class="main-table">
+            <div class="table-hd">
+                <div class="row">
+                    <div class="col col1"><span>职位名称</span></div>
+                    <div class="col col2"><span>职位类别</span></div>
+                    <div class="col col3"><span>工作地点</span></div>
+                    <div class="col col4"><span>招聘人数</span></div>
+                    <div class="col col5"><span>更新时间</span></div>
+                    <div class="col col6"></div>
+                </div>
+
+            </div>
+
+    </div>
+</div>
+<script type="text/template" id="templateBox">
+        <div class="row">
+            <div class="col col1"><span><%=name%></span></div>
+            <div class="col col2"><span><%=postType%></span></div>
+            <div class="col col3"><span><%=workPlace%></span></div>
+            <div class="col col4"><span><%=recruitNum%></span></div>
+            <div class="col col5"><span><%=publishDate%></span></div>
+            <div class="col col6">
+                <a href="javascript:;" class="down-btn" name="toggle_btn" id="toggle-btn"></a>
+            </div>
+        </div>
+        <div class="info" name="info">
+            <p class="work-content">工作职责:</p>
+            <p><%=workContent%></p>
+            <p class="service-condition">职位要求:</p>
+            <p><%=serviceCondition%></p>
+            <div class="tool-btns">
+                <a href="javascript:;" class="apply btn">申请职位</a>
+                <a href="javascript:;" class="collect btn">收藏职位</a>
+            </div>
+        </div>
+</script>
+<script type="text/javascript" src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>
+<script type="text/javascript" src="data/myajax.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
